@@ -12,6 +12,14 @@ test('Login', async({page})=>{
     await loginPageMethods.iniciarSesion()
     const elreal = await page.locator('.product_label');
     await expect(elreal).toBeVisible();
+    await commonPageMethods.abrirMenu();
+    await commonPageMethods.abrirAllItemns();
+    await commonPageMethods.abrirMenu();
+    await commonPageMethods.abrirAbout();
+    await commonPageMethods.abrirMenu();
+    await commonPageMethods.abrirLogOut();
+    await commonPageMethods.abrirMenu();
+    await commonPageMethods.abrirResetApp();
     await page.waitForTimeout(1000);
 
 
