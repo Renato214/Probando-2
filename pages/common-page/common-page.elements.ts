@@ -7,12 +7,10 @@ export class CommonPageElements{
         }
     get letMenu(){
         return{
-            allItems: this.page.locator('#inventory_sidebar_link'),
-            about: this.page.locator('#about_sidebar_link'),
-            logout: this.page.locator('#logout_sidebar_link'),
-            resetApp: this.page.locator('#reset_sidebar_link'),
-            
-
+            allItems: this.page.locator('[id="inventory_sidebar_link"]'),
+            about: this.page.locator('[id="about_sidebar_link"]'),
+            logout: this.page.locator('[id="logout_sidebar_link"]'),
+            resetApp: this.page.locator('[id="reset_sidebar_link"]'),
         }
 
     }
