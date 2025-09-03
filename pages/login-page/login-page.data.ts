@@ -9,9 +9,6 @@ export class LoginPageData{
             },
         
             passw: "secret_sauce",
-            //{
-            //     secretSauce:"secret_sauce",
-            // },
         }
 
     }
